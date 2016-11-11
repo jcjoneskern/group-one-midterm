@@ -20,9 +20,20 @@ $(function() {
       $("#form").hide();
       console.log(reservations);
     });
-  }//end of seatClick
+  }
 
-});
+//THIS "SHOULD" CHECK THE HOW MAMY SEATS ARE AVAILABLE 
+function Theatre( seats, cost){
+    this.seats = seats;
+    this.cost = cost;
+    this.checkAvailability = function(){
+        return.this.seats - this.cost;
+    };
+}
 
-//unrelated: we could probably just build an if/else statement or something that would prevent the booking option from even becoming available when clicking on reserved seats
-//maybe a second array that just holds reserved seats? wasn't there a demo like this...?
+var thetroit = new Theatre(3, 8);
+
+var details = Theatre.seats + ": seats available";
+details += Theatre.checkAvailability();
+var elTheatre = document.getElementById("form");
+elTheatre.textContent = details;
