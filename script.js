@@ -9,11 +9,9 @@ $(function() {
     $(".seat").on("click",function(event){
       $("#form").slideDown();
       seatNum = event.target.id;
-      console.log(seatNum);
     });
     $("#submit").on("click", function() {
       var name = $("#nameField").val();
-      console.log(name);
       reservations.push(
         {name: name,
         number: seatNum}
