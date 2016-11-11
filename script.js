@@ -15,7 +15,6 @@ $(function() {
         $("#form").slideDown().show();
         seatNum = event.target.id;
         currentSeat = $(this);
-        console.log(currentSeat);
     }
     });
     $("#submit").on("click", function() {
@@ -28,8 +27,6 @@ $(function() {
       $("#nameField").val("");
       $("#thanks").show().html("<p>Thank you for your reservation, "+name+"!");
       $("#form").hide();
-      console.log(currentSeat);
-      console.log(reservations);
     });
   }//end of seatClick
 
