@@ -1,6 +1,11 @@
+<<<<<<< HEAD
+Once upon a time in the mystical land of Shangri La, there lived two great friends, Dominique and Maria. 
+They lived with their mother Anna and their faithful TA Adam. The both loved coding soooo much they decided to stare into the sun. After staring into the sun for hours Elizabeth decided they needed to go buy some sunglasses. Unfortunately, Elizabeth couldn't see very well because she had stared into the sun for too long. Retinal damage is not very much fun. :(
+=======
 Once upon a time in the mystical land of Detroit, there lived two great friends, David and Jeseekia. 
 
 They lived with their mother Elizabeth and their faithful canine Syntax. The both loved coding soooo much they decided to stare into the sun.
  After staring into the sun for hours Elizabeth decided they needed to go buy some sunglasses. 
 Unfortunately, Elizabeth couldn't see very well because she had stared into the sun for too long. Retinal damage is not very much fun. :(
 
+>>>>>>> a653237aac169e061f86e1a711475cb90376af6e
