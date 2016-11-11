@@ -1,23 +1,23 @@
-.seats {
+.seat {
   color: black;
   position: relative;
-  display: inline-block;
-  border: 1px;
-  border-color: black;
+  display: block;
+  border: 1px solid black;
+  width: 90%
 }
-.columns {
+.column {
 	position: relative;
 	display: inline-block;
 }
 
-.seat-chart {
+section {
 	width: 90%
 	margin: 0 auto;
 }
 
 .available:hover {
 	background-color: /* something here */
-	border-radius: 
+	border-radius:
 }
 
 }
