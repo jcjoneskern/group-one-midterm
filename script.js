@@ -6,8 +6,6 @@ $(function() {
   function seatClick() {
     var seatNum;
     $(".seat").on("click",function(event){
-
-      console.log(event.target.className);
       if ($(event.target).hasClass("reserved") === true) {
         $.noop();
       } else {

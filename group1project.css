@@ -23,12 +23,16 @@
   position: relative;
   display: block;
   border: 1px solid black;
-  width: 90%
+  width: 90%;
+	padding: .5em;
+	margin: .1em;
+	box-sizing: border-box;
 }
 
 .column {
 	position: relative;
 	display: inline-block;
+	width: 15%;
 }
 
 section {
@@ -43,14 +47,16 @@ section {
 
 .available {
 	background-color: black;
-	border-radius: 7px; 
+	border-radius: 7px;
 	display: inline-block;
+	color: white;
 }
 
 .available:hover {
-	background-color: black;
-	border-radius: 7px; 
+	background-color: gray;
+	border-radius: 7px;
 	display: inline-block;
+	color: white;
 }
 
 .active:hover {
@@ -70,4 +76,3 @@ section {
 	border-radius: 7px;
 	display: inline-block;
 }
-
