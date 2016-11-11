@@ -1,13 +1,12 @@
-//push form info into an array
-//clicking on seat brings up form
 $(function() {
+  //takes user info and pushes it into an array
   var reservations = [];
   $(".seat").click(seatClick());
-
   function seatClick() {
     var seatNum;
     $(".seat").on("click",function(event){
-      $("#form").slideDown();
+      $("#thanks").hide();
+      $("#form").slideDown().show();
       seatNum = event.target.id;
     });
     $("#submit").on("click", function() {
@@ -16,11 +15,13 @@ $(function() {
         {name: name,
         number: seatNum}
       );
-      // $("#form").html("<p>Thank you for your reservation, "+name+"!</p>")
-      //clicking a new seat doesn't bring back the form so this is commented out for now
+      $("#nameField").val("");
+      $("#thanks").show().html("<p>Thank you for your reservation, "+name+"!");
+      $("#form").hide();
+      console.log(reservations);
     });
-  }
-  //needs something to prevent you from changing your seat while reserving
+  }//end of seatClick
+
 });
 
 //unrelated: we could probably just build an if/else statement or something that would prevent the booking option from even becoming available when clicking on reserved seats
