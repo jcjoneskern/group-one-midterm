@@ -24,6 +24,8 @@ body{
     padding: .5;
 }
 
+/*THIS STILL IS CONFLCTING WITH THE #SELECTABLE ID FOR THE UI*/
+/*
 .seat {
     color: black;
     position: relative;
@@ -34,6 +36,7 @@ body{
     margin: .1em;
     box-sizing: border-box;
 }
+*/
 
 .column {
     position: relative;
@@ -87,16 +90,66 @@ section,
     list-style: none;
     border:2px solid black;
     border-radius: 5px;
-    background-color:darkslateblue;
+    background-color:black;
+    color:whitesmoke;
 }
 
-#selectable .ui-selecting{
-    background-color:red;
+
+/* THIS IS TOTALLY OPTIONAL. I THINK THE JQUERY UI MIGHT BE TO MUCH FOR WHAT WE WANT TO DO. */
+#A1:hover,
+#A2:hover,
+#A3:hover,
+#A4:hover,
+#A5:hover,
+#A6:hover{
+   position: relative;
+   background-color:goldenrod;
+    border:2px solid whitesmoke;
+    border-radius:8px;
+}
+#B1:hover,
+#B2:hover,
+#B3:hover,
+#B4:hover,
+#B5:hover,
+#B6:hover{
+   position: relative;
+   background-color:silver;
+    border:2px solid whitesmoke;
+    border-radius:8px;
+}
+#C1:hover,
+#C2:hover,
+#C3:hover,
+#C4:hover,
+#C5:hover,
+#C6:hover{
+   position: relative;
+   background-color:brown;
+    border:2px solid whitesmoke;
+    border-radius:8px;
+}
+#D1:hover,
+#D2:hover,
+#D3:hover,
+#D4:hover,
+#D5:hover,
+#D6:hover{
+   position: relative;
+   background-color:darkslateblue;
+    border:2px solid whitesmoke;
+    border-radius:8px;
+}
+
+/*
+.seat available  {
+    background-color:green;
 }
 
 #selectable .ui-selected{
-    background-color:red;
+    background-color:gold;
 }
+*/
 
 .seat-chart {
     width: 90%;
