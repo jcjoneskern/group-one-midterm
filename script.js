@@ -29,7 +29,7 @@ $(function() {
   }
 
     
-//    //SELECTABLE SEAT FUNCTION
-// $( function() {
-//    $( "#selectable" ).selectable();
-//  } );
+    //SELECTABLE SEAT FUNCTION
+ $( function() {
+    $( "#selectable" ).selectable();
+  } );
