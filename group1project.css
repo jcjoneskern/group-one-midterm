@@ -1,3 +1,23 @@
+/*This navbar will probably need to be changed */
+
+.navbar {
+	height: auto;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+/*As will this*/
+.navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	padding: .5;
+}
+
 .seat {
   color: black;
   position: relative;
@@ -5,19 +25,49 @@
   border: 1px solid black;
   width: 90%
 }
+
 .column {
 	position: relative;
 	display: inline-block;
 }
 
 section {
-	width: 90%
+	width: 90%;
 	margin: 0 auto;
 }
 
-.available:hover {
-	background-color: /* something here */
-	border-radius:
+.seat-chart {
+	width: 90%;
+	margin: 0 auto;
 }
 
+.available {
+	background-color: black;
+	border-radius: 7px; 
+	display: inline-block;
 }
+
+.available:hover {
+	background-color: black;
+	border-radius: 7px; 
+	display: inline-block;
+}
+
+.active:hover {
+	background-color: grey;
+	border-radius: 7px;
+	display: inline-block;
+}
+
+.reserved {
+	background-color: gold;
+	border-radius: 7px;
+	display: inline-block;
+}
+
+.reserved:hover {
+	background-color: goldenrod;
+	border-radius: 7px;
+	display: inline-block;
+}
+
