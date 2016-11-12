@@ -32,12 +32,42 @@
 .column {
 	position: relative;
 	display: inline-block;
-	width: 15%;
+	width: 13%;
+    height:500px
 }
+
+/*OUTER COLUMNS*/
+#col-1{
+    position: relative;
+    bottom:40px;
+    
+}
+
+#col-6{
+    position: relative;
+    bottom:40px;
+    
+}
+
+/*INNER COLUMNS*/
+#col-3{
+    position: relative;
+    top:40px;
+    
+}
+
+#col-4{
+    position: relative;
+    top:40px;
+    
+}
+
 
 section {
 	width: 90%;
 	margin: 0 auto;
+    padding:10px;
+    text-align: center;
 }
 
 .seat-chart {
@@ -48,9 +78,12 @@ section {
 .available {
 	background-color: black;
 	border-radius: 7px;
+    width:50%;
+    height: 100px;
 	display: inline-block;
 	color: white;
 }
+
 
 .available:hover {
 	background-color: gray;

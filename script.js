@@ -28,18 +28,8 @@ $(function() {
     });
   }
 
-//THIS "SHOULD" CHECK THE HOW MAMY SEATS ARE AVAILABLE 
-function Theatre( seats, cost){
-    this.seats = seats;
-    this.cost = cost;
-    this.checkAvailability = function(){
-        return.this.seats - this.cost;
-    };
-}
-
-var thetroit = new Theatre(3, 8);
-
-var details = Theatre.seats + ": seats available";
-details += Theatre.checkAvailability();
-var elTheatre = document.getElementById("form");
-elTheatre.textContent = details;
+    
+//    //SELECTABLE SEAT FUNCTION
+// $( function() {
+//    $( "#selectable" ).selectable();
+//  } );
