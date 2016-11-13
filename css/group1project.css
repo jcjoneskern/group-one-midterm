@@ -1,0 +1,144 @@
+/*THIS CAN CHANGE WHENEVER. THOUGHT ID ADD BG COLOR TILL WE FIGURE OUT EVERYTHING. WHITE BGS HURT MY FAACE...:)  */
+body{
+    background-color: tomato;
+}
+/*This navbar will probably need to be changed */
+
+.navbar {
+    height: auto;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+/*As will this*/
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding: .5;
+}
+
+/*THIS STILL IS CONFLCTING WITH THE #SELECTABLE ID FOR THE UI*/
+/*
+.seat {
+    color: black;
+    position: relative;
+    display: block;
+    border: 1px solid black;
+    width: 90%;
+    padding: .5em;
+    margin: .1em;
+    box-sizing: border-box;
+}
+*/
+
+.column {
+    position: relative;
+    display: inline-block;
+    width: 10%;
+    height: 500px
+}
+
+
+/*OUTER COLUMNS*/
+
+#col-1 {
+    position: relative;
+    bottom: 40px;
+}
+
+#col-6 {
+    position: relative;
+    bottom: 40px;
+}
+
+
+/*INNER COLUMNS*/
+
+#col-3 {
+    position: relative;
+    top: 40px;
+}
+
+#col-4 {
+    position: relative;
+    top: 40px;
+}
+
+section,
+#selectable {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#selectable li {
+    margin: 3px;
+    padding: 1px;
+    float: left;
+    width: 100px;
+    height: 80px;
+    font-size: 4em;
+    text-align: center;
+    list-style: none;
+    border:2px solid black;
+    border-radius: 5px;
+    background-color:black;
+    color:whitesmoke;
+}
+
+
+ 
+ 
+
+.seat-chart {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.available {
+    background-color: black;
+    border-radius: 7px;
+    width: 50%;
+    height: 100px;
+    display: inline-block;
+    color: white;
+}
+
+.available:hover {
+    background-color: gray;
+    border-radius: 7px;
+    display: inline-block;
+    color: white;
+}
+
+.active:hover {
+    background-color: grey;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.reserved {
+    background-color: gold;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.reserved:hover {
+    background-color: goldenrod;
+    border-radius: 7px;
+    display: inline-block;
+}
+
+
+/*THIS IS TOTALLY OPTIONAL- JUST SAW IT AN THOUGHT IT MIGHT BE A COOL BONUS*/
+fieldset{
+    width: 300px;
+}
