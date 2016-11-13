@@ -111,7 +111,6 @@ h1 {
     color:whitesmoke;
 }
 
-
 /* THIS IS TOTALLY OPTIONAL. I THINK THE JQUERY UI MIGHT BE TO MUCH FOR WHAT WE WANT TO DO. */
 /*#A1:hover,
 #A2:hover,
@@ -173,6 +172,10 @@ all the colors were conflicting with the css below*/
     border-radius: 7px;
     display: inline-block;
     color: white;
+}
+
+.vip {
+  border: 2px solid #efcd53 !important;
 }
 
 .active {

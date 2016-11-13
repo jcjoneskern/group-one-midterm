@@ -1,9 +1,8 @@
-$(function() {
-//takes user info and pushes it into an array
+$(function() { //equivalent to document.ready
  var reservations = [];
  var currentSeat;
  $(".seat").click(seatClick());
-
+//takes user info and pushes it into an array
  function seatClick() {
    var seatNum;
    $(".seat").on("click",function(event){
@@ -24,15 +23,42 @@ $(function() {
        number: seatNum}
      );
      $(currentSeat).addClass("reserved").removeClass("active available");
+     $(currentSeat).text("Reserved");
      $("#nameField").val("");
      $("#thanks").show().html("<p>Thank you for your reservation, "+name+"!");
      $("#form").hide();
      console.log(reservations);
    });
  } //end seatclick function
+
+//the below code only applies to unreserved seats
+//hover with price information for VIP seats
+ $(".vip").hover(
+  function() {
+    if ($(event.target).hasClass("reserved") === true) {
+      $.noop();
+    } else {
+   $(this).append("<span><p>VIP $25</p></span>");
+  }
+  }, function() {
+   $(this).find("span:last").remove();
+ });
+//hover with price info for other seats
+//needs some styling fixes to fit the seats
+ $(".available").hover(
+  function() {
+    if ($(event.target).hasClass("reserved") === true || $(event.target).hasClass("vip") === true) {
+      $.noop();
+    } else {
+   $(this).append("<span><p>General Admission $10</p></span>");
+  }
+  }, function() {
+   $(this).find("span:last").remove();
+ });
+ //end price info
+ //this doesn't necessarily need to be implemented with hover, but I think it looks ~fancy~
+
  //adding the active class doesn't really do what we want, so we should try to figure out the selectable UI probably
-
-
 //SELECTABLE SEAT FUNCTION
 
   //THIS FUNCTION ALLOWS YOU TO RESERVE THE SEAT UPON CLICK...SEAT A1-A6
@@ -129,5 +155,7 @@ $(function() {
     // });
 });
 
+//reserving the seat should happen when they submit the form, not whent they click the seat
+//updated the text to reflect this
 //we can adjust things later but for now the animations and price are commented out
 //it was distracting and I don't think it was working the way we wanted
