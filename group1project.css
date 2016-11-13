@@ -1,6 +1,7 @@
 /*THIS CAN CHANGE WHENEVER. THOUGHT ID ADD BG COLOR TILL WE FIGURE OUT EVERYTHING. WHITE BGS HURT MY FAACE...:)  */
 body{
     background-color: tomato;
+    font-family: sans-serif;
 }
 /*This navbar will probably need to be changed */
 
@@ -22,19 +23,39 @@ body{
     padding: .5;
 }
 
-/*THIS STILL IS CONFLCTING WITH THE #SELECTABLE ID FOR THE UI*/
-/*
-.seat {
-    color: black;
-    position: relative;
-    display: block;
-    border: 1px solid black;
-    width: 90%;
-    padding: .5em;
-    margin: .1em;
-    box-sizing: border-box;
+h1 {
+  text-align: center;
 }
-*/
+#stage {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+#charthead {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+#legend {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+#legend li {
+  list-style: none;
+}
+#form {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+#thanks {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .column {
     position: relative;
@@ -69,7 +90,7 @@ body{
     top: 40px;
 }
 
-section, #selectable {
+#selectable {
     width: 90%;
     margin: 0 auto;
     padding: 10px;
@@ -82,18 +103,17 @@ section, #selectable {
     float: left;
     width: 100px;
     height: 80px;
-    font-size: 4em;
+    font-size: 1em;
     text-align: center;
     list-style: none;
     border:2px solid black;
     border-radius: 5px;
-    background-color:black;
     color:whitesmoke;
 }
 
 
 /* THIS IS TOTALLY OPTIONAL. I THINK THE JQUERY UI MIGHT BE TO MUCH FOR WHAT WE WANT TO DO. */
-#A1:hover,
+/*#A1:hover,
 #A2:hover,
 #A3:hover,
 #A4:hover,
@@ -138,20 +158,7 @@ section, #selectable {
     border-radius:8px;
 }
 
-/*
-.seat available  {
-    background-color:green;
-}
-
-#selectable .ui-selected{
-    background-color:gold;
-}
-*/
-
-.seat-chart {
-    width: 90%;
-    margin: 0 auto;
-}
+all the colors were conflicting with the css below*/
 
 .available {
     background-color: black;
@@ -161,53 +168,49 @@ section, #selectable {
     display: inline-block;
     color: white;
 }
-
 .available:hover {
-    background-color: gray;
+    background-color: darkgray;
     border-radius: 7px;
     display: inline-block;
     color: white;
 }
 
+.active {
+  background-color: gold;
+}
 .active:hover {
-    background-color: grey;
+    background-color: goldenrod;
     border-radius: 7px;
     display: inline-block;
 }
 
 .reserved {
-    background-color: gold;
+    background-color: lightgray;
     border-radius: 7px;
     display: inline-block;
 }
 
 .reserved:hover {
-    background-color: goldenrod;
+    background-color: gray;
     border-radius: 7px;
     display: inline-block;
 }
-#legend {
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-#legend li {
-  list-style: none;
-}
 
-#form {
-  display: none;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
+/*moving all the selectable plugin stuff out of the way*/
 
-#thanks {
-  display: none;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
+/*THIS STILL IS CONFLCTING WITH THE #SELECTABLE ID FOR THE UI*/
+/*
+.seat {
+    color: black;
+    position: relative;
+    display: block;
+    border: 1px solid black;
+    width: 90%;
+    padding: .5em;
+    margin: .1em;
+    box-sizing: border-box;
 }
+*/
 
 /*JQUERY SELECTABLE UI*/
 
