@@ -28,22 +28,20 @@ $(function() {
       $("#thanks").show().html("<p>Thank you for your reservation, "+name+"!");
       $("#form").hide();
     });
-  };
-
-//THE CODE BELOW RUNS IF I COMMENT OUT THE CODE ABOVE.
-
-
-
-
-
-
-
-
-
-//SELECTABLE SEAT FUNCTION
-$(document).ready(function () {
-
-            //THIS FUNCTION ALLOWS YOU TO RESERVE THE SEAT UPON CLICK...SEAT A1-A6
+      
+      
+   
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+       //THIS FUNCTION ALLOWS YOU TO RESERVE THE SEAT UPON CLICK...SEAT A1-A6
 
             $("#A1, #A2, #A3, #A4, #A5, #A6").click(function () {
 
@@ -193,6 +191,15 @@ $(document).ready(function () {
                 });
 
 
+  };
 
 
-            });
+
+
+
+
+
+
+
+
+ 
