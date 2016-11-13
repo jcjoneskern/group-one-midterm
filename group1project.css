@@ -11,8 +11,6 @@ body{
     position: absolute;
     top: 0;
 }
-
-
 /*As will this*/
 
 .navbar ul {
@@ -71,8 +69,7 @@ body{
     top: 40px;
 }
 
-section,
-#selectable {
+section, #selectable {
     width: 90%;
     margin: 0 auto;
     padding: 10px;
@@ -189,7 +186,28 @@ section,
     border-radius: 7px;
     display: inline-block;
 }
+#legend {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+#legend li {
+  list-style: none;
+}
 
+#form {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#thanks {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 /*JQUERY SELECTABLE UI*/
 
@@ -202,20 +220,20 @@ section,
       background: #F39814;
       color: white;
 }
-  #selectable { 
+  #selectable {
       list-style-type: none;
       margin: 0;
       padding: 0;
       width: 450px;
       color:red;
 }
-  #selectable li { 
+  #selectable li {
       margin: 3px;
       padding: 1px;
       float: left;
       width: 100px;
-      height: 80px; 
+      height: 80px;
       font-size: 4em;
-      text-align: center; 
+      text-align: center;
 }
 */
