@@ -1,5 +1,5 @@
 $(function() { //equivalent to document.ready
-   
+
       $("#slides").slidesjs({
      navigation: {
       active: false,
@@ -11,7 +11,7 @@ $(function() { //equivalent to document.ready
       effect: "slide"
         // [string] Can be either "slide" or "fade".
     },
-       
+
       pagination: {
       active: false,
         // [boolean] Create pagination items.
@@ -19,7 +19,7 @@ $(function() { //equivalent to document.ready
       effect: "slide"
         // [string] Can be either "slide" or "fade".
     },
-          
+
           play: {
       active: true,
         // [boolean] Generate the play and stop buttons.
@@ -37,14 +37,14 @@ $(function() { //equivalent to document.ready
       restartDelay: 2500
         // [number] restart delay on inactive slideshow
     },
-          
-   
-    
+
+
+
 
     });
-      
-    
-    
+
+
+
 $("#selectable").selectable();
 
  var reservations = [];
@@ -61,7 +61,6 @@ $("#selectable").selectable();
        $("#form").slideDown().show();
        currentSeat = this;
        seatNum = currentSeat.id;
-       console.log(seatNum);
    }
    });
    $("#submit").on("click", function() {
@@ -75,7 +74,6 @@ $("#selectable").selectable();
      $("#nameField").val("");
      $("#thanks").show().html("<p>Thank you for your reservation, "+name+"!");
      $("#form").hide();
-     console.log(reservations);
    });
  } //end seatclick function
 
@@ -106,6 +104,3 @@ $("#selectable").selectable();
 
 
 });
-
-   
-    

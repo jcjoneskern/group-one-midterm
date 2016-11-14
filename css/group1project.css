@@ -1,14 +1,8 @@
-/*THIS CAN CHANGE WHENEVER. THOUGHT ID ADD BG COLOR TILL WE FIGURE OUT EVERYTHING. WHITE BGS HURT MY FAACE...:)  */
-
 body {
     background-color: black;
     font-family: 'Varela Round'; sans-serif;
     margin: 0;
 }
-
-
-/*This navbar will probably need to be changed */
-
 header {
     background-color: goldenrod;
     width: 100%;
@@ -22,33 +16,6 @@ main {
     padding: 10px;
     box-sizing: border-box;
 }
-
-
-/*
-.navbar {
-    height: auto;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: 0;
-}
-*/
-
-
-/*As will this*/
-
-
-/*
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    padding: .5;
-}
-*/
-
 h1 {
     text-align: center;
     padding: 30px;
@@ -68,13 +35,11 @@ h2 {
   padding: 40px;
   font-family: 'righteous', cursive;
 }
-
 h3 {
     text-align: center;
     margin: 0;
 
 }
-
 #stage {
     width: 100%;
     margin: 0 auto;
@@ -117,7 +82,6 @@ h3 {
 }
 
 #selectable {
-    width: 100%;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -128,17 +92,15 @@ section ul {
 }
 
 section {
-    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 #seats {
-  margin: 0 auto;
-
+  margin-left: 3%;
 }
 
 #selectable li {
-    margin: 3px;
+    margin: .5%;
     padding: 1px;
     display: inline-block;
     float: left;
@@ -150,14 +112,9 @@ section {
     list-style: none;
     border: 2px solid black;
     border-radius: 5px;
-
     color: whitesmoke;
     position: relative;
-
-
-
     box-sizing: border-box;
-    position: relative;
 }
 
 #selectable .ui-selected {
