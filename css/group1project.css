@@ -53,11 +53,25 @@ h1 {
     text-align: center;
     padding: 30px;
     margin: 0;
+    font-family: 'Righteous', cursive;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.bios {
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+  font-family: 'righteous', cursive;
 }
 
 h3 {
     text-align: center;
     margin: 0;
+
 }
 
 #stage {
