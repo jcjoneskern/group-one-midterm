@@ -44,8 +44,11 @@ $(function() { //equivalent to document.ready
     });
 
 
-
-$("#selectable").selectable();
+$("#selectable li").on("click", function() {
+  if ($(this).hasClass("available") === true) {
+  $(this).toggleClass("active").siblings().removeClass("active");
+  }
+});
 
  var reservations = [];
  var currentSeat;
@@ -54,9 +57,7 @@ $("#selectable").selectable();
  function seatClick() {
    var seatNum;
    $(".seat").on("click",function(event){
-     if ($(event.target).hasClass("reserved") === true) {
-       $.noop();
-     } else {
+     if ($(this).hasClass("available") === true) {
        $("#thanks").hide();
        $("#form").slideDown().show();
        currentSeat = this;
@@ -69,7 +70,7 @@ $("#selectable").selectable();
        {name: name,
        number: seatNum}
      ); //creates array in case you wanted to check total # of reservations
-     $(currentSeat).addClass("reserved").removeClass("available");
+     $(currentSeat).addClass("reserved").removeClass("available active");
      $(currentSeat).text("Reserved");
      $(currentSeat).data({name: name}); //associates name with seat
      $("#nameField").val("");

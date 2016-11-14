@@ -140,11 +140,6 @@ section {
     position: relative;
     box-sizing: border-box;
 }
-
-#selectable .ui-selected {
-    background: #CD7F32;
-}
-
 #selectable .ui-selecting {
     background: #CD7F32;
 }
@@ -188,6 +183,15 @@ section {
     border-radius: 7px;
     display: inline-block;
 }
+
+.active {
+    background-color: #CD7F32;
+}
+
+.active:hover {
+    background-color: #dca570;
+}
+
 
 footer {
     background-color: goldenrod;
