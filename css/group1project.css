@@ -2,7 +2,7 @@
 
 body {
     background-color: black;
-    font-family: sans-serif;
+    font-family: 'Varela Round'; sans-serif;
     margin: 0;
 }
 
@@ -59,6 +59,7 @@ h1 {
 h2 {
   text-align: center;
   margin: 0;
+  font-family: 'Righteous', cursive;
 }
 
 .bios {
@@ -125,7 +126,7 @@ h3 {
 section ul {
     padding: 0;
 }
- 
+
 section {
     width: 100%;
     margin: 0 auto;
@@ -133,7 +134,7 @@ section {
 }
 #seats {
   margin: 0 auto;
- 
+
 }
 
 #selectable li {
@@ -149,12 +150,12 @@ section {
     list-style: none;
     border: 2px solid black;
     border-radius: 5px;
- 
+
     color: whitesmoke;
     position: relative;
- 
-     
- 
+
+
+
     box-sizing: border-box;
     position: relative;
 }
@@ -225,7 +226,7 @@ footer {
     left: 15%;
     margin: 0% auto;
     border-radius: 5px;
-    
+
     z-index: 100;
 }
 
@@ -244,5 +245,3 @@ img {
     display: none;
     left: 19%;
 }
-
- 
