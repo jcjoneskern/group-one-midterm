@@ -1,8 +1,9 @@
 /*THIS CAN CHANGE WHENEVER. THOUGHT ID ADD BG COLOR TILL WE FIGURE OUT EVERYTHING. WHITE BGS HURT MY FAACE...:)  */
 
 body{
-    background-color: whitesmoke;
+    background-color: black;
     font-family: sans-serif;
+    margin: 0;
 }
 /*This navbar will probably need to be changed */
 
@@ -10,8 +11,13 @@ header {
   background-color: goldenrod;
   width: 100%;
   height: 100px;
-  margin-top: -20px;
-  margin-bottom: 30px;
+}
+main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 /*
@@ -38,28 +44,33 @@ header {
 h1 {
   text-align: center;
   padding: 30px;
+  margin: 0;
 }
 
 h3 {
   text-align: center;
+  margin: 0;
 }
 
 #stage {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 #charthead {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 #legend {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 #legend li {
@@ -71,6 +82,7 @@ h3 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 #thanks {
@@ -78,6 +90,7 @@ h3 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
 
 #selectable {
@@ -87,18 +100,24 @@ h3 {
     position: relative;
 }
 
+section ul {
+  padding: 0;
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 #selectable li {
     margin: 3px;
-
     padding: 1px;
     display: inline-block;
     float: left;
     width: 15%;
     height: 80px;
     padding: 2px;
-    float: left;
-    width: 15%;
-    height: 80px;
     font-size: 1em;
     text-align: center;
     list-style: none;
@@ -106,6 +125,7 @@ h3 {
     border-radius: 5px;
     color:whitesmoke;
     position: relative;
+    box-sizing: border-box;
 }
 
 #selectable .ui-selected {
@@ -116,8 +136,12 @@ h3 {
   background: #CD7F32;
 }
 
-#slectable:hover .ui-selecting {
+#selectable .ui-selected:hover {
   background: #dca570;
+}
+
+#help {
+  clear:both;
 }
 
 .available {
@@ -139,16 +163,6 @@ h3 {
   border: 2px solid #efcd53 !important;
 }
 
-.active {
-  background-color: gold;
-}
-/*
-.active:hover {
-    background-color: #dca570;
-    border-radius: 7px;
-    display: inline-block;
-}
-*/
 .reserved {
     background-color: gray;
     border-radius: 7px;
@@ -167,50 +181,4 @@ footer {
   width: 100%;
   height: 100px;
 
-  
 }
-/*moving all the selectable plugin stuff out of the way*/
-
-/*THIS STILL IS CONFLCTING WITH THE #SELECTABLE ID FOR THE UI*/
-/*
-.seat {
-    color: black;
-    position: relative;
-    display: block;
-    border: 1px solid black;
-    width: 90%;
-    padding: .5em;
-    margin: .1em;
-    box-sizing: border-box;
-}
-*/
-
-/*JQUERY SELECTABLE UI*/
-
-
-/*
-  #selectable .ui-selecting {
-      background: #FECA40;
-}
-  #selectable .ui-selected {
-      background: #F39814;
-      color: white;
-}
-  #selectable {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      width: 450px;
-      color:red;
-}
-  #selectable li {
-      margin: 3px;
-      padding: 1px;
-      float: left;
-      width: 100px;
-      height: 80px;
-      font-size: 4em;
-      text-align: center;
-}
-*/
-
