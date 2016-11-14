@@ -19,26 +19,15 @@ $(function() { //equivalent to document.ready
       effect: "slide"
         // [string] Can be either "slide" or "fade".
     },
-
-          play: {
-      active: true,
-        // [boolean] Generate the play and stop buttons.
-        // You cannot use your own buttons. Sorry.
-      effect: "slide",
-        // [string] Can be either "slide" or "fade".
-      interval: 5000,
-        // [number] Time spent on each slide in milliseconds.
-      auto: false,
-        // [boolean] Start playing the slideshow on load.
+  play: {
+      active: false,
+      auto: true,
+      interval: 4000,
       swap: true,
-        // [boolean] show/hide stop and play buttons
-      pauseOnHover: false,
-        // [boolean] pause a playing slideshow on hover
+      pauseOnHover: true,
       restartDelay: 2500
-        // [number] restart delay on inactive slideshow
-    },
-
-
+      
+   }
 
 
     });
