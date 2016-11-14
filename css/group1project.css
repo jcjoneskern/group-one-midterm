@@ -104,10 +104,8 @@ section ul {
   padding: 0;
 }
 
-section {
-  width: 100%;
+#seats {
   margin: 0 auto;
-  text-align: center;
 }
 
 #selectable li {
@@ -124,8 +122,8 @@ section {
     border: 2px solid black;
     border-radius: 5px;
     color:whitesmoke;
-    position: relative;
     box-sizing: border-box;
+    position: relative;
 }
 
 #selectable .ui-selected {
