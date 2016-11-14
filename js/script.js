@@ -68,23 +68,23 @@ $("#selectable").selectable();
      reservations.push(
        {name: name,
        number: seatNum}
-     );
+     ); //creates array in case you wanted to check total # of reservations
      $(currentSeat).addClass("reserved").removeClass("available");
      $(currentSeat).text("Reserved");
+     $(currentSeat).data({name: name}); //associates name with seat
      $("#nameField").val("");
      $("#thanks").show().html("<p>Thank you for your reservation, "+name+"!");
      $("#form").hide();
    });
  } //end seatclick function
 
-//the below code only applies to unreserved seats
 //hover with price information for VIP seats
  $(".vip").hover(
   function() {
     if ($(event.target).hasClass("reserved") === true) {
       $.noop();
     } else {
-   $(this).append("<span><p>VIP $25</p></span>");
+   $(this).append("<span></br>VIP $25</span>");
   }
   }, function() {
    $(this).find("span:last").remove();
@@ -95,12 +95,23 @@ $("#selectable").selectable();
     if ($(event.target).hasClass("reserved") === true || $(event.target).hasClass("vip") === true) {
       $.noop();
     } else {
-   $(this).append("<span><p>General Admission $10</p></span>");
+   $(this).append("<span></br>General Admission $10</span>");
   }
   }, function() {
    $(this).find("span:last").remove();
  });
  //end price info
+ //hover with reserved info
+ $(".seat").hover(
+  function() {
+    if ($(event.target).hasClass("reserved") === true) {
+      $(this).append("<span></br>by: "+$(this).data().name+"</span>");
+    } else {
+   $.noop;
+  }
+  }, function() {
+   $(this).find("span:last").remove();
+ });
 
 
 });
