@@ -26,7 +26,7 @@ $(function() { //equivalent to document.ready
       swap: true,
       pauseOnHover: true,
       restartDelay: 2500
-      
+
    }
 
 
@@ -48,12 +48,13 @@ $("#selectable li").on("click", function() {
    $(".seat").on("click",function(event){
      if ($(this).hasClass("available") === true) {
        $("#thanks").hide();
-       $("#form").slideDown().show();
+       $("form").slideDown().show();
        currentSeat = this;
        seatNum = currentSeat.id;
    }
    });
-   $("#submit").on("click", function() {
+   $("form").on("submit", function(event) {
+     event.preventDefault();
      var name = $("#nameField").val();
      reservations.push(
        {name: name,
@@ -64,7 +65,7 @@ $("#selectable li").on("click", function() {
      $(currentSeat).data({name: name}); //associates name with seat
      $("#nameField").val("");
      $("#thanks").show().html("<p>Thank you for your reservation, "+name+"!");
-     $("#form").hide();
+     $("form").hide();
    });
  } //end seatclick function
 
