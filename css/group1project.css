@@ -111,16 +111,15 @@ h3 {
 section ul {
     padding: 0;
 }
-
-<<<<<<< HEAD
+ 
 section {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-=======
+}
 #seats {
   margin: 0 auto;
->>>>>>> 757e4838ed8fd96588a850067b6cd97af673c143
+ 
 }
 
 #selectable li {
@@ -136,12 +135,12 @@ section {
     list-style: none;
     border: 2px solid black;
     border-radius: 5px;
-<<<<<<< HEAD
+ 
     color: whitesmoke;
     position: relative;
-=======
-    color:whitesmoke;
->>>>>>> 757e4838ed8fd96588a850067b6cd97af673c143
+ 
+     
+ 
     box-sizing: border-box;
     position: relative;
 }
