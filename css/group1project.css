@@ -134,6 +134,7 @@ h3 {
     color: white;
     width: 71px;
     display: inline-block;
+    opacity: 0.2;
 
 }
 
@@ -283,6 +284,7 @@ section {
     background-color: #494444;
     border-radius: 7px;
     display: inline-block;
+    opacity: 0.2;
 }
 
 .reserved:hover {
