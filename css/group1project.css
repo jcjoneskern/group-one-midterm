@@ -358,16 +358,52 @@ img {
     overflow: hidden;
     margin: 0 auto;
     height: 480px;
+    z-index: 2;
 }
 
 #slidesjs-container {
     width: 100%;
-    height: 100%;
+    height: 500px;
     margin: 0 auto;
     position: relative;
+    z-index: 2;
 }
 
 .slides {
     width: 50px;
     height: 480px;
+}
+
+.background-box {
+    position: absolute;
+    width: 69.5%;
+    height: 473px;
+    left: 15.1%;
+    top: 50px;
+    background-color: black;
+    border: 2px solid transparent;
+    z-index: 1;
+}
+
+.stage-circle {
+    position: absolute;
+    border: 2px solid transparent;
+    background-color: brown;
+    border-radius: 23%;
+    width: 100%;
+    height: 100px;
+    top: 83%;
+    z-index: -1;
+}
+
+.wood {
+    position: absolute;
+    border: 2px solid grey;
+    background-color: brown;
+    border-radius: 23%;
+    width: 100%;
+    height: 100px;
+    left: 0px;
+    top: -2%;
+    z-index: -1;
 }
