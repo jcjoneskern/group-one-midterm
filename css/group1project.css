@@ -12,34 +12,31 @@ header {
 main {
     width: 90%;
     margin: 0 auto;
-    background-color: whitesmoke;
+    background-color: silver;
     padding: 10px;
     box-sizing: border-box;
 }
 h1 {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     margin: 0;
     font-family: 'Righteous', cursive;
+    font-size: 300%;
 }
 
 h2 {
   text-align: center;
   margin: 0;
-  font-family: 'Righteous', cursive;
+  padding: 20px 0 10px 0;
+
 }
 
-.bios {
-  text-align: center;
-  margin: 0;
-  padding: 40px;
-  font-family: 'righteous', cursive;
-}
 h3 {
     text-align: center;
     margin: 0;
-
+    padding: 5px 0 20px 0;
 }
+
 #stage {
     width: 100%;
     margin: 0 auto;
@@ -55,14 +52,37 @@ h3 {
 }
 
 #legend {
-    width: 100%;
+    width: 25%;
     margin: 0 auto;
-    text-align: center;
+    padding: 0 0 10px 0;
+    text-align: left;
     position: relative;
+    background-color: lightgrey;
 }
 
 #legend li {
     list-style: none;
+    display: inline-block;
+    padding: 4px 2px 4px 2px;
+}
+
+.legendlist1 {
+    color: white;
+    background-color: black;
+    width: 66px;
+    display: inline-block;
+}
+
+.legendlist2 {
+    background-color: goldenrod;
+    width: 64px;
+    display: inline-block;
+}
+
+.legendlist3 {
+    background-color: brown;
+    width: 64px;
+    display: inline-block;
 }
 
 #form {
@@ -95,6 +115,7 @@ section {
     margin: 0 auto;
     text-align: center;
 }
+
 #seats {
   margin-left: 3%;
 }
@@ -149,10 +170,6 @@ section {
     color: white;
 }
 
-.vip {
-    border: 2px solid #efcd53 !important;
-}
-
 .reserved {
     background-color: gray;
     border-radius: 7px;
@@ -165,6 +182,18 @@ section {
     display: inline-block;
 }
 
+.bios {
+  float: right;
+  margin: 0;
+ 
+  font-family: 'righteous', cursive;
+}
+
+#biopictures {
+    float: left;
+    width: 200px;
+    height: auto;
+}
 footer {
     background-color: goldenrod;
     width: 100%;
