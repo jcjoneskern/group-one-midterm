@@ -3,41 +3,28 @@ $(function() { //equivalent to document.ready
       $("#slides").slidesjs({
      navigation: {
       active: false,
-        // [boolean] Generates next and previous buttons.
-        // You can set to false and use your own buttons.
-        // User defined buttons must have the following:
-        // previous button: class="slidesjs-previous slidesjs-navigation"
-        // next button: class="slidesjs-next slidesjs-navigation"
       effect: "slide"
-        // [string] Can be either "slide" or "fade".
     },
-
       pagination: {
       active: false,
-        // [boolean] Create pagination items.
-        // You cannot use your own pagination. Sorry.
       effect: "slide"
-        // [string] Can be either "slide" or "fade".
     },
   play: {
-      
       active: false,
       auto: true,
       interval: 4000,
       swap: true,
       pauseOnHover: true,
       restartDelay: 2500
-
    },
           width: 300,
           height: 480
-
     });
 
 
 $("#selectable li").on("click", function() {
   if ($(this).hasClass("available") === true) {
-  $(this).toggleClass("active").siblings().removeClass("active");
+  $(this).addClass("active").siblings().removeClass("active");
   }
 });
 
@@ -97,7 +84,9 @@ $("#selectable li").on("click", function() {
  //hover with reserved info
  $(".seat").hover(
   function() {
-    if ($(event.target).hasClass("reserved") === true) {
+    if ($(event.target).hasClass("reserved") === true && $(event.target).hasClass("vip") === true) {
+      $(this).append("<span></br>by: "+$(this).data().name+"</br>VIP</span>");
+    } else if ($(event.target).hasClass("reserved") === true) {
       $(this).append("<span></br>by: "+$(this).data().name+"</span>");
     } else {
    $.noop;
