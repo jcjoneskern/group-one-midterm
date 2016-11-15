@@ -142,7 +142,6 @@ h3 {
     background-color: #CD7F32;
     width: 69px;
     display: inline-block;
-
 }
 
 form {
@@ -182,7 +181,6 @@ section {
 
 #selectable li {
     margin: .5%;
-    padding: 1px;
     display: inline-block;
     float: left;
     width: 15%;
@@ -198,70 +196,8 @@ section {
     box-sizing: border-box;
 }
 
-#selectable .ui-selecting {
-    background: #CD7F32;
-}
-
-#selectable .ui-selected:hover {
-    background: #dca570;
-}
-
 #help {
     clear: both;
-}
-
-#A1 {
-  background-color: #fbbe00;
-  color: black;
-}
-
-#A1:hover {
-  background-color: #AAAAAA;
-}
-
-#A2 {
-  background-color: #fbbe00;
-  color: black;
-}
-
-#A2:hover {
-  background-color: #AAAAAA;
-}
-
-#A3 {
-  background-color: #fbbe00;
-  color: black;
-}
-
-#A3:hover {
-  background-color: #AAAAAA;
-}
-
-#A4 {
-  background-color: #fbbe00;
-  color: black;
-}
-
-#A4:hover {
-  background-color: #AAAAAA;
-}
-
-#A5 {
-  background-color: #fbbe00;
-  color: black;
-}
-
-#A5:hover {
-  background-color: #AAAAAA;
-}
-
-#A6 {
-  background-color: #fbbe00;
-  color: black;
-}
-
-#A6:hover {
-  background-color: #AAAAAA;
 }
 
 .available {
@@ -280,6 +216,15 @@ section {
     color: white;
 }
 
+.vip {
+  background-color: #fbbe00;
+  color: black;
+}
+
+.vip:hover {
+  background-color: #AAAAAA;
+}
+
 .reserved {
     background-color: #494444;
     border-radius: 7px;
@@ -288,9 +233,10 @@ section {
 }
 
 .reserved:hover {
-    background-color: lightgray;
+    background-color: #9d9595;
     border-radius: 7px;
     display: inline-block;
+    opacity: 1;
 }
 
 .bios {
@@ -300,12 +246,6 @@ section {
     padding: 15px;
     width: 98%;
 }
-
-/*#biopictures {
-    float: left;
-    width: 200px;
-    height: auto;
-}*/
 
 .active {
     background-color: #CD7F32;
@@ -346,7 +286,6 @@ footer {
 img {
     position: relative;
     width: 50%;
-    /*    height: 86%;*/
     min-height: 75%;
     margin: 0 auto;
 }
