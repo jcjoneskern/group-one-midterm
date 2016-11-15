@@ -80,9 +80,13 @@ h3 {
     width: 25%;
     margin: 0 auto;
     padding: 0 0 10px 0;
-    text-align: left;
+    text-align: center;
     position: relative;
     background-color: lightgrey;
+}
+
+#legend ul {
+    padding: 0;
 }
 
 #legend li {
@@ -91,23 +95,27 @@ h3 {
     padding: 4px 2px 4px 2px;
 }
 
-.legendlist1 {
+#available {
     color: white;
     background-color: black;
-    width: 66px;
+    width: 69px;
     display: inline-block;
+   
+    
 }
 
-.legendlist2 {
+#reserved {
     background-color: goldenrod;
-    width: 64px;
+    width: 71px;
     display: inline-block;
+    
 }
 
-.legendlist3 {
+#selection {
     background-color: brown;
-    width: 64px;
+    width: 69px;
     display: inline-block;
+    
 }
 
 form {
