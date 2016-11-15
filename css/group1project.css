@@ -248,6 +248,23 @@ section {
     width: 100%;
     box-sizing: border-box;
 }
+.bioimg {
+  width: 100%;
+  border-radius: 100%;
+  margin: 10px;
+}
+.bioimg:hover {
+  opacity: .9;
+}
+figure {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .active {
     background-color: #CD7F32;
@@ -269,6 +286,8 @@ footer {
     animation: header-footer-gradient 10s ease infinite;
     /*gradient animation*/
     width: 100%;
+    height: auto;
+    text-align: center;
     height: auto;
 }
 

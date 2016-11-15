@@ -212,9 +212,8 @@
         zIndex: 0
       });
       width = $element.width();
-      height = (this.options.height / this.options.width) * width;
+      height = 480;
       this.options.width = width;
-      // this.options.height = height;
       return $(".slidesjs-control, .slidesjs-container", $element).css({
         width: width,
         height: height
