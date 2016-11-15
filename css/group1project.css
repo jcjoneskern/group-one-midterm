@@ -190,7 +190,6 @@ section {
     list-style: none;
     border: 2px solid black;
     border-radius: 5px;
-    color: whitesmoke;
     position: relative;
     box-sizing: border-box;
 }
@@ -209,7 +208,7 @@ section {
 }
 
 .available:hover {
-    background-color: #AAAAAA;
+    background-color: #404040;
     border-radius: 7px;
     display: inline-block;
     color: white;
@@ -221,7 +220,8 @@ section {
 }
 
 .vip:hover {
-  background-color: #AAAAAA;
+  background-color: #ffd24d;
+  color: black;
 }
 
 .reserved {
@@ -229,13 +229,15 @@ section {
     border-radius: 7px;
     display: inline-block;
     opacity: 0.2;
+    color: white;
 }
 
 .reserved:hover {
     background-color: #494444;
     border-radius: 7px;
     display: inline-block;
-    opacity: 1;
+    opacity: .5;
+    color: white;
 }
 
 .bios {
@@ -249,10 +251,12 @@ section {
 
 .active {
     background-color: #CD7F32;
+    color: black;
 }
 
 .active:hover {
     background-color: #dca570;
+    color: black;
 }
 
 footer {
@@ -302,7 +306,7 @@ img {
 
 #slidesjs-container {
     width: 100%;
-    height: 500px !important;
+    height: 500px;
     margin: 0 auto;
     position: relative;
     z-index: 2;
