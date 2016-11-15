@@ -7,13 +7,13 @@ body {
 
 header {
     background-color: goldenrod;
-    /*begin gradient animation*/
+    /*gradient animation*/
     background: linear-gradient(182deg, #fbbe00, #f9ce4a, #f5db89, #f2e6c0);
     background-size: 800% 800%;
     -webkit-animation: header-footer-gradient 10s ease infinite;
     -moz-animation: header-footer-gradient 10s ease infinite;
     animation: header-footer-gradient 10s ease infinite;
-    /*end gradient animation*/
+    /*gradient animation*/
     width: 100%;
     height: 100px;
 }
@@ -116,6 +116,12 @@ h3 {
     padding: 4px 2px 4px 2px;
 }
 
+#vip {
+  background-color: #fbbe00;
+  width: 30px;
+  display: inline-block;
+}
+
 #available {
     color: white;
     background-color: black;
@@ -124,15 +130,18 @@ h3 {
 }
 
 #reserved {
-    background-color: goldenrod;
+    background-color: #494444;
+    color: white;
     width: 71px;
     display: inline-block;
+
 }
 
 #selection {
-    background-color: brown;
+    background-color: #CD7F32;
     width: 69px;
     display: inline-block;
+
 }
 
 form {
@@ -200,6 +209,60 @@ section {
     clear: both;
 }
 
+#A1 {
+  background-color: #fbbe00;
+  color: black;
+}
+
+#A1:hover {
+  background-color: #AAAAAA;
+}
+
+#A2 {
+  background-color: #fbbe00;
+  color: black;
+}
+
+#A2:hover {
+  background-color: #AAAAAA;
+}
+
+#A3 {
+  background-color: #fbbe00;
+  color: black;
+}
+
+#A3:hover {
+  background-color: #AAAAAA;
+}
+
+#A4 {
+  background-color: #fbbe00;
+  color: black;
+}
+
+#A4:hover {
+  background-color: #AAAAAA;
+}
+
+#A5 {
+  background-color: #fbbe00;
+  color: black;
+}
+
+#A5:hover {
+  background-color: #AAAAAA;
+}
+
+#A6 {
+  background-color: #fbbe00;
+  color: black;
+}
+
+#A6:hover {
+  background-color: #AAAAAA;
+}
+
 .available {
     background-color: black;
     border-radius: 7px;
@@ -210,14 +273,14 @@ section {
 }
 
 .available:hover {
-    background-color: darkgray;
+    background-color: #AAAAAA;
     border-radius: 7px;
     display: inline-block;
     color: white;
 }
 
 .reserved {
-    background-color: gray;
+    background-color: #494444;
     border-radius: 7px;
     display: inline-block;
 }
@@ -229,16 +292,18 @@ section {
 }
 
 .bios {
-    float: right;
-    margin: 0;
-    font-family: 'righteous', cursive;
+    font-family: 'Varela Round', cursive;
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    width: 98%;
 }
 
-#biopictures {
+/*#biopictures {
     float: left;
     width: 200px;
     height: auto;
-}
+}*/
 
 .active {
     background-color: #CD7F32;
@@ -250,15 +315,15 @@ section {
 
 footer {
     background-color: goldenrod;
-    /*begin gradient animation*/
+    /*gradient animation*/
     background: linear-gradient(182deg, #fbbe00, #f9ce4a, #f5db89, #f2e6c0);
     background-size: 800% 800%;
     -webkit-animation: header-footer-gradient 10s ease infinite;
     -moz-animation: header-footer-gradient 10s ease infinite;
     animation: header-footer-gradient 10s ease infinite;
-    /*begin gradient animation*/
+    /*gradient animation*/
     width: 100%;
-    height: 100px;
+    height: auto;
 }
 
 #poster {
