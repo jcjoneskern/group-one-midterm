@@ -251,7 +251,6 @@ section {
 .bioimg {
   width: 100%;
   border-radius: 100%;
-  margin: 10px;
 }
 .bioimg:hover {
   opacity: .9;
@@ -260,6 +259,7 @@ figure {
   display: inline-block;
   width: 10%;
   vertical-align: top;
+  text-align: center;
 }
 footer a {
   text-decoration: none;
