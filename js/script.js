@@ -20,6 +20,7 @@ $(function() { //equivalent to document.ready
         // [string] Can be either "slide" or "fade".
     },
   play: {
+      
       active: false,
       auto: true,
       interval: 4000,
@@ -27,8 +28,9 @@ $(function() { //equivalent to document.ready
       pauseOnHover: true,
       restartDelay: 2500
 
-   }
-
+   },
+          width: 300,
+          height: 480
 
     });
 
